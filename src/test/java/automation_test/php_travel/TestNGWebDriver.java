@@ -1,5 +1,6 @@
 package automation_test.php_travel;
 
+import automation_test.BaseUIClass;
 import command_providers.ActOn;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.ScreenCapture;
 
-public class TestNGWebDriver {
-    WebDriver driver;
+public class TestNGWebDriver extends BaseUIClass {
 
     @BeforeMethod
     public void browserInitialization() {
